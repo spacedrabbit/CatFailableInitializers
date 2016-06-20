@@ -1,0 +1,19 @@
+{
+  "results": [
+    {
+      "id": "2909049-54738",
+      "first": "cat",
+      "last": "thoughts",
+      "email": "cat.thoughts@neko.com",
+      "username": "greengoose319",
+      "picture":  "https://randomuser.me/api/portraits/men/40.jpg",
+    },
+    {
+      "id": "092340-23491",
+      "first": "louis",
+      "last": "tur",
+      "email": "louis.tur@example.com",
+      "username": "louisCatExample",
+    }
+  ]
+}

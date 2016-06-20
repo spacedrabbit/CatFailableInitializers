@@ -12,10 +12,9 @@
 		143EB3EE1D18889C0068BBDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143EB3EC1D18889C0068BBDB /* Main.storyboard */; };
 		143EB3F01D18889C0068BBDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 143EB3EF1D18889C0068BBDB /* Assets.xcassets */; };
 		143EB3F31D18889C0068BBDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143EB3F11D18889C0068BBDB /* LaunchScreen.storyboard */; };
-		143EB3FD1D1889080068BBDB /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EB3FB1D1889080068BBDB /* UserModel.swift */; };
-		143EB3FE1D1889080068BBDB /* UserSeedHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EB3FC1D1889080068BBDB /* UserSeedHelper.swift */; };
-		143EB4001D1889200068BBDB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EB3FF1D1889200068BBDB /* Constants.swift */; };
-		143EB4021D1889350068BBDB /* random_users.json in Resources */ = {isa = PBXBuildFile; fileRef = 143EB4011D1889350068BBDB /* random_users.json */; };
+		143EB4061D1894F00068BBDB /* CatUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EB4051D1894F00068BBDB /* CatUser.swift */; };
+		143EB4081D1895700068BBDB /* random_catUsers.json in Resources */ = {isa = PBXBuildFile; fileRef = 143EB4071D1895700068BBDB /* random_catUsers.json */; };
+		143EB40A1D18962A0068BBDB /* CatUserSeedHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EB4091D18962A0068BBDB /* CatUserSeedHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +25,9 @@
 		143EB3EF1D18889C0068BBDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		143EB3F21D18889C0068BBDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		143EB3F41D18889C0068BBDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		143EB3FB1D1889080068BBDB /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = ../../CatUserDefaults/CatUserDefaults/UserModel.swift; sourceTree = "<group>"; };
-		143EB3FC1D1889080068BBDB /* UserSeedHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserSeedHelper.swift; path = ../../CatUserDefaults/CatUserDefaults/UserSeedHelper.swift; sourceTree = "<group>"; };
-		143EB3FF1D1889200068BBDB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../../CatUserDefaults/CatUserDefaults/Constants.swift; sourceTree = "<group>"; };
-		143EB4011D1889350068BBDB /* random_users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = random_users.json; path = ../../CatUserDefaults/random_users.json; sourceTree = "<group>"; };
+		143EB4051D1894F00068BBDB /* CatUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatUser.swift; sourceTree = "<group>"; };
+		143EB4071D1895700068BBDB /* random_catUsers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = random_catUsers.json; sourceTree = "<group>"; };
+		143EB4091D18962A0068BBDB /* CatUserSeedHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatUserSeedHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +60,8 @@
 		143EB3E71D18889C0068BBDB /* CatFailableInitializers */ = {
 			isa = PBXGroup;
 			children = (
-				143EB3FF1D1889200068BBDB /* Constants.swift */,
-				143EB3FB1D1889080068BBDB /* UserModel.swift */,
-				143EB3FC1D1889080068BBDB /* UserSeedHelper.swift */,
+				143EB4051D1894F00068BBDB /* CatUser.swift */,
+				143EB4091D18962A0068BBDB /* CatUserSeedHelper.swift */,
 				143EB4041D1889530068BBDB /* App Delegate */,
 				143EB4031D18894C0068BBDB /* View Controllers */,
 				143EB3FA1D1888DD0068BBDB /* Supporting Files */,
@@ -75,7 +72,7 @@
 		143EB3FA1D1888DD0068BBDB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				143EB4011D1889350068BBDB /* random_users.json */,
+				143EB4071D1895700068BBDB /* random_catUsers.json */,
 				143EB3EC1D18889C0068BBDB /* Main.storyboard */,
 				143EB3EF1D18889C0068BBDB /* Assets.xcassets */,
 				143EB3F11D18889C0068BBDB /* LaunchScreen.storyboard */,
@@ -161,7 +158,7 @@
 				143EB3F31D18889C0068BBDB /* LaunchScreen.storyboard in Resources */,
 				143EB3F01D18889C0068BBDB /* Assets.xcassets in Resources */,
 				143EB3EE1D18889C0068BBDB /* Main.storyboard in Resources */,
-				143EB4021D1889350068BBDB /* random_users.json in Resources */,
+				143EB4081D1895700068BBDB /* random_catUsers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,11 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				143EB4001D1889200068BBDB /* Constants.swift in Sources */,
 				143EB3EB1D18889C0068BBDB /* ViewController.swift in Sources */,
-				143EB3FD1D1889080068BBDB /* UserModel.swift in Sources */,
+				143EB4061D1894F00068BBDB /* CatUser.swift in Sources */,
 				143EB3E91D18889C0068BBDB /* AppDelegate.swift in Sources */,
-				143EB3FE1D1889080068BBDB /* UserSeedHelper.swift in Sources */,
+				143EB40A1D18962A0068BBDB /* CatUserSeedHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

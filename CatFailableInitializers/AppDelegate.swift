@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    UserSeedHelper.loadUserSeedData()
+    CatUserSeedHelper.loadUserSeedData()
     
     self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
     self.window?.rootViewController = ViewController()
