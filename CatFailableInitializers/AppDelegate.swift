@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     CatUserSeedHelper.loadUserSeedData()
-    
+      
     self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
     self.window?.rootViewController = ViewController()
     self.window?.makeKeyAndVisible()

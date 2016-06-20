@@ -11,31 +11,32 @@ import Foundation
 internal class CatUserSeedHelper {
   
   internal class func loadUserSeedData() {
-    
+
     if let path = NSBundle.mainBundle().pathForResource("random_catUsers", ofType: "json") {
       if let jsonData = NSData(contentsOfFile: path) {
         
         do {
-          
           if let jsonResults = try NSJSONSerialization.JSONObjectWithData(jsonData, options: .MutableContainers) as? NSDictionary {
             if let results: [[String : AnyObject]] = jsonResults[CatUserKeys.results] as? [[String : AnyObject]] {
               
               for result in results {
                 if let newUser: CatUser = CatUser(withJSON: result) {
-                  print("User: \(newUser.jsonRepresentation())\n\n")
+                  print("New CatUser Created: \(newUser.jsonRepresentation())\n\n")
+                } else {
+                  print("Unable to create CatUser\n\n")
                 }
               }
-              
+
             }
           }
         }
         catch let error as NSError {
-          print("Loading JSON data threw: \(error)")
+          print("Error Encountered: \(error.userInfo)")
         }
-        
         
       }
     }
+
   }
   
 }

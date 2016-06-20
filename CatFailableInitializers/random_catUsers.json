@@ -5,15 +5,22 @@
       "first": "cat",
       "last": "thoughts",
       "email": "cat.thoughts@neko.com",
-      "username": "greengoose319",
-      "picture":  "https://randomuser.me/api/portraits/men/40.jpg",
+      "username": "catthoughts",
+      "picture":  "me_laying_in_the_sun.jpg",
     },
     {
       "id": "092340-23491",
       "first": "louis",
       "last": "tur",
       "email": "louis.tur@example.com",
-      "username": "louisCatExample",
+      "username": "louistur",
+    },
+    {
+      "id": "7802349-23942",
+      "first": "dog",
+      "last": "thoughts",
+      "username": "dogThoughts@shibainu.com",
+      "picture":  "wagging_tail.jpg",
     }
   ]
 }
