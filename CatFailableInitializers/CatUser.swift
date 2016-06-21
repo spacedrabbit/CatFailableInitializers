@@ -9,7 +9,7 @@
 import Foundation
 
 internal struct CatUserKeys {
-  internal static let results: String = "results"
+  internal static let users: String = "users"
   
   internal static let userID: String = "id"
   internal static let firstName: String = "first"

@@ -17,7 +17,7 @@ internal class CatUserSeedHelper {
         
         do {
           if let jsonResults = try NSJSONSerialization.JSONObjectWithData(jsonData, options: .MutableContainers) as? NSDictionary {
-            if let results: [[String : AnyObject]] = jsonResults[CatUserKeys.results] as? [[String : AnyObject]] {
+            if let results: [[String : AnyObject]] = jsonResults[CatUserKeys.users] as? [[String : AnyObject]] {
               
               for result in results {
                 if let newUser: CatUser = CatUser(withJSON: result) {
